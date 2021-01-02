@@ -7,6 +7,7 @@ const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),
     cameraSensor = document.querySelector("#camera--sensor"),
     cameraTrigger = document.querySelector("#camera--trigger");
+    cameraSwitch = document.querySelector("#camera--switch");
 
 // Access the device camera and stream to cameraView
 function cameraStart() {
@@ -29,6 +30,12 @@ cameraTrigger.onclick = function() {
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
     // track.stop();
+};
+
+cameraSwitch.onclick = function() {
+    constraints = { video: { facingMode: "user" }, audio: false };
+    track.stop();
+    cameraStart();
 };
 
 // Start the video stream when the window loads
