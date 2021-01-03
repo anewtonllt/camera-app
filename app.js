@@ -1,6 +1,7 @@
 // Set constraints for the video stream
-var constraints = { video: { facingMode: "environment" }, audio: false }; // user - environment
+var constraints = { video: { facingMode: "user" }, audio: false }; // user - environment
 var track = null;
+bool sw = false;
 
 // Define constants
 const cameraView = document.querySelector("#camera--view"),
@@ -33,7 +34,12 @@ cameraTrigger.onclick = function() {
 };
 
 cameraSwitch.onclick = function() {
-    constraints = { video: { facingMode: "user" }, audio: false };
+    sw = !sw;
+    if (sw) {
+      constraints = { video: { facingMode: "environment" }, audio: false };
+    } else {
+      constraints = { video: { facingMode: "user" }, audio: false };
+    }     
     track.stop();
     cameraStart();
 };
