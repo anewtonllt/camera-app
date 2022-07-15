@@ -17,6 +17,10 @@ function cameraStart() {
         .then(function(stream) {
             track = stream.getTracks()[0];
             cameraView.srcObject = stream;
+            var canvas = document.getElementById("cameraView");
+            var ctx = canvas.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.fillText("Hello World",10,50);
         })
         .catch(function(error) {
             console.error("Oops. Something is broken.", error);
