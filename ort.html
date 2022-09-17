@@ -4,7 +4,6 @@
 <title>Orentation</title>
 </head>
 <body>
-
 <script>
 function getorth() {
   if (typeof DeviceMotionEvent.requestPermission === 'function') {
@@ -25,6 +24,7 @@ function getorth() {
 }
 
 function handleOrientation(event) {
+  console.log(event);
   const alpha = event.alpha;
   const beta = event.beta;
   const gamma = event.gamma;
@@ -38,6 +38,5 @@ function handleOrientation(event) {
 <p id="Alp">Alpha</p>
 <p id="Bet">Beta</p>
 <p id="Gam">Gamma</p>
-
 </body>
 </html>
