@@ -48,6 +48,8 @@ function handleOrientation(event) {
   document.getElementById("Bet").innerHTML = beta;
   document.getElementById("Gam").innerHTML = gamma;
 }
+  window.addEventListener("load", getorth, false);
+  window.addEventListener("load", getLocation, false);
 </script>
 <button type="button" onclick="getorth()">IMU</button>
 <button onclick="getLocation()">GPS</button>
