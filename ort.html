@@ -5,7 +5,22 @@
 </head>
 <body>
 <script>
+var x = document.getElementById("GPS");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    setInterval(() => {navigator.geolocation.getCurrentPosition(showPosition);}, 100);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
 function getorth() {
+  getLocation();
   if (typeof DeviceMotionEvent.requestPermission === 'function') {
     // Handle iOS 13+ devices.
     DeviceMotionEvent.requestPermission()
@@ -42,5 +57,6 @@ function handleOrientation(event) {
 <p id="Alp">Alpha</p>
 <p id="Bet">Beta</p>
 <p id="Gam">Gamma</p>
+<p id="GPS"></p>
 </body>
 </html>
