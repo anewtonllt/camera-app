@@ -31,13 +31,14 @@ function handleOrientation(event) {
   // Do stuff...
   var today = new Date();
   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  document.getElementById("Alp").innerHTML = time;
-//  document.getElementById("Alp").innerHTML = alpha;
+  document.getElementById("Tm").innerHTML = time;
+  document.getElementById("Alp").innerHTML = alpha;
   document.getElementById("Bet").innerHTML = beta;
   document.getElementById("Gam").innerHTML = gamma;
 }
 </script>
 <button type="button" onclick="getorth()">Get it!</button>
+<p id="Tm">Time</p>
 <p id="Alp">Alpha</p>
 <p id="Bet">Beta</p>
 <p id="Gam">Gamma</p>
