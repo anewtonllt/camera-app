@@ -29,11 +29,15 @@ function handleOrientation(event) {
   const beta = event.beta;
   const gamma = event.gamma;
   // Do stuff...
-  document.getElementById("demo").innerHTML = gamma;
+  document.getElementById("Alp").innerHTML = alpha;
+  document.getElementById("Bet").innerHTML = beta;
+  document.getElementById("Gam").innerHTML = gamma;
 }
 </script>
-<button type="button" onclick="getorth()">Click Me!</button>
-<p id="demo"></p>
+<button type="button" onclick="getorth()">Get it!</button>
+<p id="Alp">Alpha</p>
+<p id="Bet">Beta</p>
+<p id="Gam">Gamma</p>
 
 </body>
 </html>
