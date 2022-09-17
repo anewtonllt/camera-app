@@ -29,7 +29,10 @@ function handleOrientation(event) {
   const beta = event.beta;
   const gamma = event.gamma;
   // Do stuff...
-  document.getElementById("Alp").innerHTML = alpha;
+  var today = new Date();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  document.getElementById("Alp").value = time;
+//  document.getElementById("Alp").innerHTML = alpha;
   document.getElementById("Bet").innerHTML = beta;
   document.getElementById("Gam").innerHTML = gamma;
 }
