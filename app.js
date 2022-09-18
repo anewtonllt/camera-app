@@ -2,6 +2,7 @@
 var constraints = { video: { facingMode: "environment" }, audio: false }; // user - environment
 var track = null;
 var sw = false;
+var sw2 = false;
 
 // Define constants
 const cameraView = document.querySelector("#camera--view"),
@@ -25,11 +26,17 @@ function cameraStart() {
 
 // Take a picture when cameraTrigger is tapped
 cameraTrigger.onclick = function() {
-    cameraSensor.width = cameraView.videoWidth;
-    cameraSensor.height = cameraView.videoHeight;
-    cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
-    cameraOutput.src = cameraSensor.toDataURL("image/webp");
-    cameraOutput.classList.add("taken");
+        sw2 = !sw2;
+    if (sw2) {
+      document.getElementById("nfy").innerHTML = "Sending,.";
+    } else {
+      document.getElementById("nfy").innerHTML = "Ready.";
+    }  
+//    cameraSensor.width = cameraView.videoWidth;
+//    cameraSensor.height = cameraView.videoHeight;
+//    cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
+//    cameraOutput.src = cameraSensor.toDataURL("image/webp");
+//    cameraOutput.classList.add("taken");
     // track.stop();
 };
 
