@@ -30,7 +30,7 @@ cameraTrigger.onclick = function() {
     if (sw2) {
       document.getElementById("nfy").innerHTML = "Sending,.";
     } else {
-      document.getElementById("nfy").innerHTML = "Ready.";
+      document.getElementById("nfy").innerHTML = "Ready";
     }  
 //    cameraSensor.width = cameraView.videoWidth;
 //    cameraSensor.height = cameraView.videoHeight;
