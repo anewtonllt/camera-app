@@ -18,7 +18,7 @@ html, body{
 }
 
 #camera--trigger{
-    width: 150px;
+    width: 160px;
     background-color: black;
     color: white;
     font-size: 16px;
@@ -29,11 +29,11 @@ html, body{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 90px;
-    left: calc(75% - 100px);
+    right: 0;
 }
 
 #camera--switch{
-    width: 150px;
+    width: 160px;
     background-color: black;
     color: white;
     font-size: 16px;
@@ -58,7 +58,7 @@ html, body{
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
-    bottom: 250px;
+    bottom: 150px;
     left: 0px;
 }
 #IMU{
@@ -72,7 +72,7 @@ html, body{
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
-    bottom: 160px;
+    bottom: 70px;
     left: 0px;
 }
 #GPS{
@@ -86,7 +86,7 @@ html, body{
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
-    bottom: 30px;
+    bottom: 10px;
     left: 0px;
 }
 
