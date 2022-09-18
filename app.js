@@ -35,8 +35,8 @@ cameraTrigger.onclick = function() {
     } else {
       document.getElementById("nfy").innerHTML = "Ready";
       document.getElementById('camera--trigger').innerHTML = 'Send';
-      document.getElementById('camera--trigger').style.backgroundColor = 'white';
-      document.getElementById('camera--trigger').style.Color = 'black';
+      document.getElementById('camera--trigger').style.backgroundColor = 'black';
+      document.getElementById('camera--trigger').style.Color = 'white';
     }  
 //    cameraSensor.width = cameraView.videoWidth;
 //    cameraSensor.height = cameraView.videoHeight;
