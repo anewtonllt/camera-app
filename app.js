@@ -86,7 +86,7 @@ function handleOrientation(event) {
   var today = new Date();
   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   document.getElementById("Tm").innerHTML = "Time " + time;
-  document.getElementById("Alp").innerHTML = "Alpha: " + alpha.toFixed(2) + "<br>Beta: " + beta.toFixed(2) + "<br>Gamma: " + gamma.toFixed(2);
+  document.getElementById("IMU").innerHTML = "Alpha: " + alpha.toFixed(2) + "<br>Beta: " + beta.toFixed(2) + "<br>Gamma: " + gamma.toFixed(2);
 //  document.getElementById("Bet").innerHTML = "Beta: " + beta.toFixed(2);
 //  document.getElementById("Gam").innerHTML = "Gamma: " + gamma.toFixed(2);
 }
