@@ -44,17 +44,15 @@ function handleOrientation(event) {
  // var today = new Date();
  // var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
  // document.getElementById("Tm").innerHTML = time;
-  document.getElementById("Alp").innerHTML = alpha;
-  document.getElementById("Bet").innerHTML = beta;
+  document.getElementById("Alp").innerHTML = alpha.toFixed(2);
+  document.getElementById("Bet").innerHTML = beta.toFixed(2);
   document.getElementById("Gam").innerHTML = gamma;
 }
   window.addEventListener("load", myInit, true); function myInit(){getMotion(); getLocation();}; 
-// window.addEventListener("load", getMotion, false);
-// window.addEventListener("load", getLocation, false);
 </script>
 <button type="button" onclick="getMotion()">IMU</button>
 <button onclick="getLocation()">GPS</button>
-<p id="Tm">Time1</p>
+<p id="Tm">Time2</p>
 <p id="Alp">Alpha</p>
 <p id="Bet">Beta</p>
 <p id="Gam">Gamma</p>
