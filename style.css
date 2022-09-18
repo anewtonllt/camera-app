@@ -51,7 +51,7 @@ html, body{
     width: 120px;
     background-color: transparent;
     color: #00FF00;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 30px;
     border: none;
     padding: 5px 5px;
@@ -63,9 +63,9 @@ html, body{
 }
 #IMU{
     width: 120px;
-    background-color: transparent; //  transparent
+    background-color: transparent;
     color: #00FF00;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 30px;
     border: none;
     padding: 5px 5px;
@@ -79,9 +79,9 @@ html, body{
     width: 120px;
     background-color: transparent;
     color: #00FF00;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 30px;
-    border: none;
+    border: center;
     padding: 5px 5px;
     text-align: center;
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0.0);
@@ -89,7 +89,20 @@ html, body{
     bottom: 15px;
     left: 0px;
 }
-
+#Cent{
+    width: 120px;
+    background-color: transparent;
+    color: #00FF00;
+    font-size: 16px;
+    border-radius: 30px;
+    border: solid;
+    padding: 0px 0px;
+    text-align: center;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.0);
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+}
 .taken{
     height: 100px!important;
     width: 100px!important;
