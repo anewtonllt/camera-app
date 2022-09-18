@@ -18,7 +18,7 @@ html, body{
 }
 
 #camera--trigger{
-    width: 200px;
+    width: 150px;
     background-color: black;
     color: white;
     font-size: 16px;
@@ -28,8 +28,8 @@ html, body{
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
-    bottom: 30px;
-    left: calc(75% - 100px);
+    bottom: 90px;
+    lift: calc(75% - 100px);
 }
 
 #camera--switch{
@@ -44,42 +44,42 @@ html, body{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 30px;
-    left: calc(25% - 100px);
+    left: calc(75% - 100px);
 }
 
 #Tm{
     width: 100px;
     background-color: black;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
-    bottom: 90px;
+    bottom: 250px;
     left: 0px;
 }
 #IMU{
     width: 100px;
     background-color: transparent;
     color: black;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
-    bottom: 60px;
+    bottom: 160px;
     left: 0px;
 }
 #GPS{
-    width: 200px;
+    width: 100px;
     background-color: black;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
