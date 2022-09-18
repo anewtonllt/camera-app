@@ -36,9 +36,9 @@ cameraTrigger.onclick = function() {
 cameraSwitch.onclick = function() {
     sw = !sw;
     if (sw) {
-      constraints = { video: { facingMode: "environment" }, audio: false };
-    } else {
       constraints = { video: { facingMode: "user" }, audio: false };
+    } else {
+      constraints = { video: { facingMode: "environment" }, audio: false };
     }     
     track.stop();
     cameraStart();
