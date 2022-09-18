@@ -29,7 +29,7 @@ html, body{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 90px;
-    right: 0;
+    right: 160;
 }
 
 #camera--switch{
@@ -54,7 +54,7 @@ html, body{
     font-size: 14px;
     border-radius: 30px;
     border: none;
-    padding: 15px 20px;
+    padding: 5px 5px;
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
@@ -64,7 +64,7 @@ html, body{
 #IMU{
     width: 120px;
     background-color: transparent;
-    color: black;
+    color: lime;
     font-size: 14px;
     border-radius: 30px;
     border: none;
