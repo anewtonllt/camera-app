@@ -83,9 +83,9 @@ function handleOrientation(event) {
   const beta = event.beta;
   const gamma = event.gamma;
   
- // var today = new Date();
- // var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
- // document.getElementById("Tm").innerHTML = time;
+  var today = new Date();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  document.getElementById("Tm").innerHTML = time;
   document.getElementById("Alp").innerHTML = alpha.toFixed(2);
   document.getElementById("Bet").innerHTML = beta.toFixed(2);
   document.getElementById("Gam").innerHTML = gamma.toFixed(2);
