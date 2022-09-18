@@ -86,8 +86,8 @@ function handleOrientation(event) {
   var today = new Date();
   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   document.getElementById("Tm").innerHTML = "Time " + time;
-  document.getElementById("Alp").innerHTML = "Alpha " + alpha.toFixed(2);
-  document.getElementById("Bet").innerHTML = "Beta " + beta.toFixed(2);
-  document.getElementById("Gam").innerHTML = "Gamma " + gamma.toFixed(2);
+  document.getElementById("Alp").innerHTML = "Alpha: " + alpha.toFixed(2);
+  document.getElementById("Bet").innerHTML = "Beta: " + beta.toFixed(2);
+  document.getElementById("Gam").innerHTML = "Gamma: " + gamma.toFixed(2);
 }
 window.addEventListener("load", myInit, true); function myInit(){cameraStart(); getMotion(); getLocation();}; 
