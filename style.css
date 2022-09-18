@@ -48,7 +48,7 @@ html, body{
 }
 
 #Tm{
-    width: 150px;
+    width: 100px;
     background-color: black;
     color: white;
     font-size: 10px;
@@ -58,11 +58,11 @@ html, body{
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
-    top: 10px;
+    bottom: 90px;
     left: 0px;
 }
 #Alp{
-    width: 200px;
+    width: 100px;
     background-color: transparent;
     color: white;
     font-size: 10px;
@@ -72,7 +72,7 @@ html, body{
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
-    top: 70px;
+    bottom: 60px;
     left: 0px;
 }
 #Bet{
