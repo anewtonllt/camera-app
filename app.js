@@ -56,8 +56,8 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  document.getElementById("GPS").innerHTML = "Latitude: " + position.coords.latitude.toFixed(6) + 
-  "<br>Longitude: " + position.coords.longitude.toFixed(6);
+  document.getElementById("GPS").innerHTML = "Lat: " + position.coords.latitude.toFixed(6) + 
+  "<br>Long: " + position.coords.longitude.toFixed(6);
 }
 function getMotion() {
   if (typeof DeviceMotionEvent.requestPermission === 'function') {
@@ -87,7 +87,5 @@ function handleOrientation(event) {
   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   document.getElementById("Tm").innerHTML = "Time " + time;
   document.getElementById("IMU").innerHTML = "Alpha: " + alpha.toFixed(2) + "<br>Beta: " + beta.toFixed(2) + "<br>Gamma: " + gamma.toFixed(2);
-//  document.getElementById("Bet").innerHTML = "Beta: " + beta.toFixed(2);
-//  document.getElementById("Gam").innerHTML = "Gamma: " + gamma.toFixed(2);
 }
 window.addEventListener("load", myInit, true); function myInit(){cameraStart(); getMotion(); getLocation();}; 
