@@ -29,11 +29,11 @@ html, body{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 90px;
-    lift: calc(75% - 100px);
+    left: calc(75% - 100px);
 }
 
 #camera--switch{
-    width: 200px;
+    width: 150px;
     background-color: black;
     color: white;
     font-size: 16px;
@@ -48,10 +48,10 @@ html, body{
 }
 
 #Tm{
-    width: 100px;
+    width: 120px;
     background-color: black;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
@@ -62,10 +62,10 @@ html, body{
     left: 0px;
 }
 #IMU{
-    width: 100px;
+    width: 120px;
     background-color: transparent;
     color: black;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
@@ -76,17 +76,17 @@ html, body{
     left: 0px;
 }
 #GPS{
-    width: 100px;
+    width: 120px;
     background-color: black;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
-    top: 250px;
+    bottom: 30px;
     left: 0px;
 }
 
