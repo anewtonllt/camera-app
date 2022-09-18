@@ -56,21 +56,21 @@ html, body{
     border: none;
     padding: 5px 5px;
     text-align: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.0);
     position: fixed;
     bottom: 150px;
     left: 0px;
 }
 #IMU{
     width: 120px;
-    background-color: transparent;
+    background-color: blue; //  transparent
     color: lime;
     font-size: 14px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
     text-align: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.0);
     position: fixed;
     bottom: 70px;
     left: 0px;
