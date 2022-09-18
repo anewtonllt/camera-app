@@ -45,4 +45,49 @@ cameraSwitch.onclick = function() {
 };
 
 // Start the video stream when the window loads
-window.addEventListener("load", cameraStart, false);
+//window.addEventListener("load", cameraStart, false);
+
+function getLocation() {
+  if (navigator.geolocation) {
+    setInterval(() => {navigator.geolocation.getCurrentPosition(showPosition);}, 100);
+  } else { 
+    document.getElementById("GPS").innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  document.getElementById("GPS").innerHTML = "Latitude: " + position.coords.latitude.toFixed(6) + 
+  "<br>Longitude: " + position.coords.longitude.toFixed(6);
+}
+function getMotion() {
+  if (typeof DeviceMotionEvent.requestPermission === 'function') {
+    // Handle iOS 13+ devices.
+    DeviceMotionEvent.requestPermission()
+      .then((state) => {
+        if (state === 'granted') {
+          window.addEventListener('deviceorientation', handleOrientation); // deviceorientation - devicemotion
+        } else {
+          console.error('Request to access the orientation was rejected');
+        }
+      })
+      .catch(console.error);
+  } else {
+    // Handle regular non iOS 13+ devices.
+    window.addEventListener('deviceorientation', handleOrientation);
+  }
+}
+
+function handleOrientation(event) {
+  console.log(event);
+  const alpha = event.alpha;
+  const beta = event.beta;
+  const gamma = event.gamma;
+  
+ // var today = new Date();
+ // var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+ // document.getElementById("Tm").innerHTML = time;
+  document.getElementById("Alp").innerHTML = alpha.toFixed(2);
+  document.getElementById("Bet").innerHTML = beta.toFixed(2);
+  document.getElementById("Gam").innerHTML = gamma.toFixed(2);
+}
+window.addEventListener("load", myInit, true); function myInit(){cameraStart(); getMotion(); getLocation();}; 
