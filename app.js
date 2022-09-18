@@ -29,8 +29,10 @@ cameraTrigger.onclick = function() {
         sw2 = !sw2;
     if (sw2) {
       document.getElementById("nfy").innerHTML = "Sending,.";
+      camera--trigger.textContent = 'Stop';
     } else {
       document.getElementById("nfy").innerHTML = "Ready";
+      camera--trigger.textContent = 'Send';
     }  
 //    cameraSensor.width = cameraView.videoWidth;
 //    cameraSensor.height = cameraView.videoHeight;
