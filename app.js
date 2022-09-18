@@ -30,13 +30,13 @@ cameraTrigger.onclick = function() {
     if (sw2) {
       document.getElementById("nfy").innerHTML = "Sending,.";
       document.getElementById('camera--trigger').innerHTML = 'Stop';
-      document.getElementById('camera--trigger').style.backgroundColor = 'white';
-      document.getElementById('camera--trigger').style.Color = 'black';
+      document.getElementById('camera--trigger').style.background-color = 'white';
+      document.getElementById('camera--trigger').style.color = 'black';
     } else {
       document.getElementById("nfy").innerHTML = "Ready";
       document.getElementById('camera--trigger').innerHTML = 'Send';
-      document.getElementById('camera--trigger').style.backgroundColor = 'black';
-      document.getElementById('camera--trigger').style.Color = 'white';
+      document.getElementById('camera--trigger').style.background-color = 'black';
+      document.getElementById('camera--trigger').style.color = 'white';
     }  
 //    cameraSensor.width = cameraView.videoWidth;
 //    cameraSensor.height = cameraView.videoHeight;
