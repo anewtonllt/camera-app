@@ -22,6 +22,7 @@ function cameraStart() {
         .catch(function(error) {
             console.error("Oops. Something is broken.", error);
         });
+    getMotion();
 }
 
 // Take a picture when cameraTrigger is tapped
@@ -88,6 +89,7 @@ function getMotion() {
     // Handle regular non iOS 13+ devices.
     window.addEventListener('deviceorientation', handleOrientation);
   }
+    getLocation();
 }
 
 function handleOrientation(event) {
@@ -101,5 +103,5 @@ function handleOrientation(event) {
   document.getElementById("Tm").innerHTML = "Time " + time;
   document.getElementById("IMU").innerHTML = "Alpha: " + alpha.toFixed(2) + "<br>Beta: " + beta.toFixed(2) + "<br>Gamma: " + gamma.toFixed(2);
 }
-window.addEventListener("load", myInit, true); 
-function myInit(){ cameraStart(); getMotion(); getLocation(); }
+window.addEventListener("load", cameraStart, true); 
+// function myInit(){ cameraStart(); getMotion(); getLocation(); }
