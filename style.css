@@ -50,7 +50,7 @@ html, body{
 #Tm{
     width: 120px;
     background-color: black;
-    color: white;
+    color: #00FF00;
     font-size: 14px;
     border-radius: 30px;
     border: none;
@@ -64,7 +64,7 @@ html, body{
 #IMU{
     width: 120px;
     background-color: blue; //  transparent
-    color: lime;
+    color: Lime;
     font-size: 14px;
     border-radius: 30px;
     border: none;
