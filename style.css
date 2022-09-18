@@ -29,7 +29,7 @@ html, body{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 90px;
-    right: 0;
+    right: 0px;
 }
 
 #camera--switch{
@@ -44,21 +44,21 @@ html, body{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 30px;
-    right: 0;
+    right: 0px;
 }
 #nfy{
-    width: 160px;
-    background-color: black;
-    color: white;
+    width: 100px;
+    background-color: white;
+    color: black;
     font-size: 16px;
     border-radius: 30px;
     border: none;
-    padding: 15px 20px;
+    padding: 5px 5px;
     text-align: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.0);
     position: fixed;
-    bottom: 150px;
-    right: 0;
+    top: 0px;
+    right: 0px;
 }
 #Tm{
     width: 120px;
