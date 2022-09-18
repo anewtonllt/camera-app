@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Orentation</title>
+<title>Orientation and Location</title>
 </head>
-<body onload=”getMotion(); getLocation();>
+<body>
 <script>
 function getLocation() {
   if (navigator.geolocation) {
@@ -48,10 +48,10 @@ function handleOrientation(event) {
   document.getElementById("Bet").innerHTML = beta;
   document.getElementById("Gam").innerHTML = gamma;
 }
-//  window.addEventListener("load", getMotion, false);
+  window.addEventListener("load", getMotion, false);
 //  window.addEventListener("load", getLocation, false);
 </script>
-<button type="button" onclick="getorth()">IMU</button>
+<button type="button" onclick="getMotion()">IMU</button>
 <button onclick="getLocation()">GPS</button>
 <p id="Tm">Time</p>
 <p id="Alp">Alpha</p>
