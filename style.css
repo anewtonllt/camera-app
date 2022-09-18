@@ -61,7 +61,7 @@ html, body{
     top: 10px;
     left: 0px;
 }
-#Tm{
+#Alp{
     width: 200px;
     background-color: black;
     color: white;
@@ -72,7 +72,49 @@ html, body{
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
-    top: 30px;
+    top: 70px;
+    left: 0px;
+}
+#Bet{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    top: 130px;
+    left: 0px;
+}
+#Gam{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    top: 190px;
+    left: 0px;
+}
+#GPS{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    top: 250px;
     left: 0px;
 }
 
