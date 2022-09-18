@@ -48,10 +48,10 @@ html, body{
 }
 
 #Tm{
-    width: 200px;
+    width: 150px;
     background-color: black;
     color: white;
-    font-size: 16px;
+    font-size: 10px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
@@ -63,9 +63,9 @@ html, body{
 }
 #Alp{
     width: 200px;
-    background-color: black;
+    background-color: transparent;
     color: white;
-    font-size: 16px;
+    font-size: 10px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
@@ -79,7 +79,7 @@ html, body{
     width: 200px;
     background-color: black;
     color: white;
-    font-size: 16px;
+    font-size: 8px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
@@ -93,7 +93,7 @@ html, body{
     width: 200px;
     background-color: black;
     color: white;
-    font-size: 16px;
+    font-size: 6px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
@@ -107,7 +107,7 @@ html, body{
     width: 200px;
     background-color: black;
     color: white;
-    font-size: 16px;
+    font-size: 4px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
