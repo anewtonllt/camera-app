@@ -46,6 +46,37 @@ html, body{
     bottom: 30px;
     right: 0px;
 }
+
+#Motion{
+    width: 160px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#GPS{
+    width: 160px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    top: 60px;
+    left: 0px;
+}
+
 #nfy{
     width: 100px;
     background-color: white;
