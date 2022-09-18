@@ -29,7 +29,7 @@ html, body{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 90px;
-    right: 160;
+    right: 0;
 }
 
 #camera--switch{
@@ -44,7 +44,7 @@ html, body{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 30px;
-    right: 160;
+    right: 0;
 }
 
 #Tm{
@@ -64,11 +64,11 @@ html, body{
 #IMU{
     width: 120px;
     background-color: blue; //  transparent
-    color: Lime;
+    color: #00FF00;
     font-size: 14px;
     border-radius: 30px;
     border: none;
-    padding: 15px 20px;
+    padding: 5px 5px;
     text-align: center;
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0.0);
     position: fixed;
@@ -78,13 +78,13 @@ html, body{
 #GPS{
     width: 120px;
     background-color: black;
-    color: white;
+    color: #00FF00;
     font-size: 14px;
     border-radius: 30px;
     border: none;
-    padding: 15px 20px;
+    padding: 5px 5px;
     text-align: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.0);
     position: fixed;
     bottom: 10px;
     left: 0px;
