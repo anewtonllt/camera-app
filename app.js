@@ -97,4 +97,5 @@ function handleOrientation(event) {
   document.getElementById("Tm").innerHTML = "Time " + time;
   document.getElementById("IMU").innerHTML = "Alpha: " + alpha.toFixed(2) + "<br>Beta: " + beta.toFixed(2) + "<br>Gamma: " + gamma.toFixed(2);
 }
-window.addEventListener("load", myInit, true); function myInit(){cameraStart(); getMotion(); getLocation();}; 
+window.addEventListener("load", myInit, true); 
+function myInit(){ cameraStart(); getMotion(); getLocation(); }
