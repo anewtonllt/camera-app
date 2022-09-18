@@ -51,14 +51,14 @@ html, body{
     background-color: white;
     color: black;
     font-size: 16px;
-    border-radius: 30px;
+    border-radius: 3px;
     border: none;
     padding: 5px 5px;
     text-align: center;
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0.0);
     position: fixed;
     top: 0px;
-    right: 0px;
+    right: 10px;
 }
 #Tm{
     width: 120px;
