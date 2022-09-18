@@ -3,7 +3,7 @@
 <head>
 <title>Orentation</title>
 </head>
-<body>
+<body onload=”getMotion(); getLocation();>
 <script>
 function getLocation() {
   if (navigator.geolocation) {
@@ -17,7 +17,7 @@ function showPosition(position) {
   document.getElementById("GPS").innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
 }
-function getorth() {
+function getMotion() {
   if (typeof DeviceMotionEvent.requestPermission === 'function') {
     // Handle iOS 13+ devices.
     DeviceMotionEvent.requestPermission()
@@ -40,16 +40,16 @@ function handleOrientation(event) {
   const alpha = event.alpha;
   const beta = event.beta;
   const gamma = event.gamma;
-  // Do stuff...
-  var today = new Date();
-  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  document.getElementById("Tm").innerHTML = time;
+  
+ // var today = new Date();
+ // var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+ // document.getElementById("Tm").innerHTML = time;
   document.getElementById("Alp").innerHTML = alpha;
   document.getElementById("Bet").innerHTML = beta;
   document.getElementById("Gam").innerHTML = gamma;
 }
-  window.addEventListener("load", getorth, false);
-  window.addEventListener("load", getLocation, false);
+//  window.addEventListener("load", getMotion, false);
+//  window.addEventListener("load", getLocation, false);
 </script>
 <button type="button" onclick="getorth()">IMU</button>
 <button onclick="getLocation()">GPS</button>
